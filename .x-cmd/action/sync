@@ -1,0 +1,13 @@
+
+(
+while read -r line; do
+    x gitb backup "git@github.com:$line"    \
+        "git@gitcode.net:$line"             \
+        "git@gitee.com:$line"
+done  <<A
+x-cmd/x-cmd
+x-cmd/release
+x-cmd/advise
+x-cmd/pkg
+A
+)
