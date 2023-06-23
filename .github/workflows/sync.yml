@@ -10,11 +10,12 @@ jobs:
   SyncBot:
     runs-on: ubuntu-latest
     env:
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_ALL_SYNC }}
-      git_user: lijunhao
+      ___X_CMD_GHACTION_X: x2
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_FOR_SYNC }}
+      git_user: l
       git_email: l@x-cmd.com
       CONCURRENCY: 10
-      ___X_CMD_GHACTION_X: x2
     steps:
       - name: main
         uses: x-cmd/action@main
